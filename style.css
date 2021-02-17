@@ -78,10 +78,31 @@
 /* ------COMPLETATI------- */
 .ex-10-icon {
     font-size: 60px;
+    animation-name: rotazione;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
+@keyframes rotazione {
+  0% {
+      transform: rotate(365deg);
+  }
+}
+/* ------COMPLETATO------- */
 .ex-11-icon {
     font-size: 60px;
 }
+.ex-11-icon:hover{
+ animation-name: mezza_rotazione;
+ animation-duration: 1s;
+ animation-timing-function: linear;
+}
+@keyframes mezza_rotazione {
+  0% { transform: rotate(0deg); }
+  75% { transform: rotate(270deg); }
+  100% { transform: rotate(0deg); }
+}
+/* ------COMPLETATO------- */
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
