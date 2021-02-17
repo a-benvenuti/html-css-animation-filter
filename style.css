@@ -54,12 +54,28 @@
 /* ------COMPLETATO------- */
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
+    transition: all 0.7s;
 }
-
+.ex-6-img:hover{
+  filter: grayscale(1);
+}
+.ex-7-img:hover, .ex-8-img:hover{
+  filter: grayscale(0.5) sepia(0.5);
+}
+.ex-8-img:hover{
+  border-radius: 15px;
+}
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: all 0.7s;
 }
+.ex-9-img:hover{
+  border-radius: 15px;
+  transform: scale(1.5);
+  filter: grayscale(0.5) sepia(0.5);
+}
+/* ------COMPLETATI------- */
 .ex-10-icon {
     font-size: 60px;
 }
